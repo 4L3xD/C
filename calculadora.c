@@ -31,7 +31,7 @@ void elementosCalculo(){
 
 } 
 
-int main(){
+void main(){
 
   printf("\n______________CALCULADORA______________\n");
 
@@ -42,5 +42,4 @@ int main(){
       scanf(" %c", &c);
     } while(c == 's' || c == 'S');
   
-  return 0;
 }
