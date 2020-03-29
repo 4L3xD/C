@@ -34,5 +34,5 @@ int main() {
       printf("\n %s, você está abaixo do peso. Busque ingerir mais fibras e dormir o suficiente. Evite hábitos como fumar e a ingestão de álcool.\nA natureza tem tudo que você precisa, alimente-se dela!\n", nome);
     }
 
-  return(0);
+  return 0;
 }

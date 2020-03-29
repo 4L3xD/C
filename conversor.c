@@ -11,5 +11,5 @@ int main(){
   celsius = ((5*(fahrenheit -32))/9); 
   printf("\nTemperatura em Celsius: = %f.\n", celsius);
 
-  return(0);
+  return 0;
 }
