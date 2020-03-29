@@ -1,4 +1,3 @@
 # C
-
-//compile and execute
-$ gcc -o executableName fileName && .executableName
+//You need to compile and run this algorithm
+$ gcc -o executableName fileName && ./executableName
