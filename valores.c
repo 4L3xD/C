@@ -21,7 +21,7 @@ void main(){
             small = num;
         }
         sum = sum+num;
-        media = sum/limit;
+        media = (float)sum/limit;
         printf("\nSoma dos números inseridos: %i\n", sum);
         printf("\n___________________________________________________\n");
     }
