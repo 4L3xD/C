@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <limits.h>
 
 void main(){
-    int limit, num, big, small = num, sum = 0;
-    float media = 0;
+    int limit, num, big = INT_MIN, small = INT_MAX, sum = 0;
     
     printf("\nVamos brincar com alguns valores!\n\nDigite um inteiro que represente a quantidade de números que você deseja inserir: ");
     scanf("%i", &limit);
@@ -21,11 +21,10 @@ void main(){
             small = num;
         }
         sum = sum+num;
-        media = (float)sum/limit;
         printf("\nSoma dos números inseridos: %i\n", sum);
         printf("\n___________________________________________________\n");
     }
     printf("\nO maior número é: %d\n", big);
     printf("\nO menor número é: %d\n", small);
-    printf("\nA média dos números é: %.2f\n\n", media);
+    printf("\nA média dos números é: %.2f\n\n", (float)sum/limit);
 }
