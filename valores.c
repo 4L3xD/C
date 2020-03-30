@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void main(){
-    int limit, num, big, small = 0, sum = 0;
+    int limit, num, big, small, sum = 0;
     float media = 0;
     
     printf("\nVamos brincar com alguns valores!\n\nDigite um inteiro que represente a quantidade de números que você deseja inserir: ");
@@ -14,6 +14,7 @@ void main(){
         printf("\nDigite um valor inteiro: ");
         scanf("%d", &num);
         printf("\n Valor %i: %d\n", i+1, num);
+        small = num;
         if(num > big){
             big = num;
         }
@@ -27,5 +28,5 @@ void main(){
     }
     printf("\nO maior número é: %d\n", big);
     printf("\nO menor número é: %d\n", small);
-    printf("\nA média dos números é: %.2f\n", media);
+    printf("\nA média dos números é: %.2f\n\n", media);
 }
