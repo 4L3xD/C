@@ -18,7 +18,7 @@ void main(){
         printf("Digite um número inteiro, em seguida pressione ENTER: \n");
         scanf("%d", &vector[i]);
         
-        for (size_t j = 0; j < 10; j++){
+        for (size_t j = 0; j == vector[i]-1; j++){
             if(j != i && vector[i] == vector[j]){
             equal = true;
             }
