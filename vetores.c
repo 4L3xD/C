@@ -25,6 +25,7 @@ void main(){
         }
         if(equal == true){
             printf("Digite um número diferente dos anteriores!\n");
+            scanf("%d", &vector[i]);
         }
 
     }
