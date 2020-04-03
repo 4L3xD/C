@@ -1,21 +1,21 @@
 # include <stdio.h>
-#include <stdbool.h>
+# include <stdbool.h>
 
 void scanArray(int* vector, int i){
     bool equal = false;
 
-    printf("Digite um número inteiro, em seguida pressione ENTER: \n");
-    scanf("%d", &vector[i]);
+    do {
+        if (equal == true) printf("Digite um número diferente dos anteriores!\n");
+        equal = false;
 
-    for (size_t j = 0; j < 10; j++){
-        if(j != i && vector[i] == vector[j]){
-            equal = true;
-        }
-    }
-    if(equal == true){
-        printf("Digite um número diferente dos anteriores!\n");
         scanf("%d", &vector[i]);
-    }
+
+        for (size_t j = 0; j < i; j++){
+            if(vector[i] == vector[j]){
+                equal = true;
+            }
+        }
+    } while (equal == true);
 }
 
 void printArray(int* vector, int size){
@@ -30,6 +30,7 @@ void main(){
     printf("\nVamos armazenar valores em um vetor.\nVocê deve inserir 10 números diferentes, que é o tamanho de nosso array.\n");
 
     for (size_t i = 0; i < 10; i++){   
+        printf("Digite um número inteiro, em seguida pressione ENTER: \n");
         scanArray(vector, i);
     }
     printArray(vector, 10);
