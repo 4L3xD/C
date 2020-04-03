@@ -20,7 +20,7 @@ void scanArray(int* vector, int i){
 
 void printArray(int* vector, int size){
     for(int i = 0; i < size; i++){
-        printf("\nElemento %i do vetor: %i\n", i, vector[i]);
+        printf("Elemento %i do vetor: %i\n", i, vector[i]);
     }
 }
 
@@ -34,4 +34,5 @@ void main(){
         scanArray(vector, i);
     }
     printArray(vector, 10);
+    printf("Todos elementos do array: %i, %i, %i, %i, %i, %i, %i, %i, %i e %i.\n", vector[0], vector[1], vector[2], vector[3], vector[4], vector[5], vector[6], vector[7], vector[8], vector[9]);
 }
