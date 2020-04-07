@@ -22,21 +22,22 @@ void main(){
         // sumOut = sumOut + fluxoEstacao[index][1];
 
     }
+    printf("___________________________________________");
+    printf("\nTotal de passageiros transportados: %d\n", sumIn);
 
-    printf("Total de passageiros transportados: %d\n", sumIn);
-
-    printf("Circulação de passageiros por estação:\n");
+    printf("\nCirculação de passageiros por estação:");
     for (int index = 0; index < numeroDeParadas; index++) {
-        printf("Estação %d: %d ", index, fluxoEstacao[index][0] + fluxoEstacao[index][1]);
+        printf("\nEstação %d: %d ", index, fluxoEstacao[index][0] + fluxoEstacao[index][1]);
     }
+    printf("\n");
 
     int fluxoTotal = 0;
-    printf("\nPassageiros transportados por estação:\n");
+    printf("\nPassageiros transportados por estação:");
     for (int index = 0; index < numeroDeParadas; index++) {
         fluxoTotal += fluxoEstacao[index][0] - fluxoEstacao[index][1];
-        printf("Estação %d: %d ", index, fluxoTotal);
+        printf("\nEstação %d: %d ", index, fluxoTotal);
     }
 
-    printf("\nDiferença entre Embarque-Desembarque: %d", sumIn - sumOut);
+    printf("\n\nDiferença entre Embarque-Desembarque: %d\n", sumIn - sumOut);
 
 }
