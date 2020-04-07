@@ -15,7 +15,8 @@ int main() {
 
     int operation;
 
-    scanf("%d %d", &n, &n);
+    printf("Digite o tamanho da matriz (ex: 2 p/ 2x2, 3 p/ 3x3, ...): ");
+    scanf("%d", &n);
 
     int matrizA[n][n];
     int matrizB[n][n];
@@ -23,16 +24,20 @@ int main() {
 
     for (int row = 0; row < n; row++) {
         for (int column = 0; column < n; column++) {
+            printf("Digite o elemento %i da matriz A: ", row);
             scanf("%d", &matrizA[row][column]);
         }
     }
 
     for (int row = 0; row < n; row++) {
         for (int column = 0; column < n; column++) {
+            printf("Digite o elemento %i da matriz B: ", row);
             scanf("%d", &matrizB[row][column]);
         }
     }
 
+    printf("\n1.Soma de matrizes\n2.Subtração de matrizes\n3.Multiplicação de matrizes\n");
+    printf("\nEscolha a operação a ser realizada: ");
     scanf("%d", &operation);
 
     if (operation == 1) {
