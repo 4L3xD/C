@@ -1,0 +1,29 @@
+Números Naturais (N)
+N = { ∃ a, b, c, ..., ∞. ∀ a, b ^ c ∈ N a+1 = b, b+1 = c | 'b' é sucessor de 'a', 'c' é sucessor de b, ... }
+N = { 0, 1, 2, 3, ..., ∞ }
+'0' é o Elemento Neutro ⊂ N | ∀ n ∈ N, n+0 = n
+
+Números Inteiros (Z)
+Z = { N ⊂ Z, ∃ a ^ b | a ∈ Z ^ b ∈ N, ou seja, a=-a ∨ a= +a ^ b= +b  ∀ a<0= -a | -a+(+b) = -a+b = -x  ∀ a>0= +a | +a+(+b) = a+b = x }
+Z = { -∞, ..., -3, -2, -1, 0, 1, 2, 3, ..., +∞ }
+'-a' é o Elemento Oposto de '+a' | ∀ -a+a= 0, ou seja, a soma de opostos resulta no Elemento Neutro.
+
+Números Racionais (Q)
+Q = { a/b | a, b ∈ Z, b≠0 }
+N ⊂ Z ⊂ Q ∃ a, b, c, d ∈ Q | a/b ^ c/d,  soma: a/b + c/d = ad + bc/bd,  produto: a/b * c/d = ac/bd
+a/b > 0, ou positivo, se a*b ∈ N; se a*b ∈ N ^ a≠0, então a/b é estritamente positivo.
+
+r<s ^ s>r if ∃ t>0 | s = r+t  r<=s ∨ r=s → s>=r ∨ s=r
+r>=0 é positivo, enquanto r<=0 é negativo!
+(Q, +, *, <=) ∀ x, y, z ∃: 
+Associativa (A1) (x+y)+z = x+(y+z)  (M1) (xy)z = x(yz)
+Comutativa (A2) x+y = y+x  (M2) xy = yx
+Elemento Neutro (A3) x+0 = x  (M3) x*1 = x   (1≠0)
+Elemento Oposto (A4) ∀ x ∃ um único y | x+y = 0 ^ y = -x → x+y = x+(-x) = 0
+Elemento Inverso (M4) ∀ x≠0 ∈ Q ∃ um único y ∈ Q | x*y = 1 ^ y = x-¹ ∨ 1/x. Assim x*x-¹ = 1.
+Distributiva da Multiplicação em Relação à Adição (D) x(y+z) = xy + xz.
+Reflexiva (O1) x <= x
+Anti-simétrica (O2) x <= y ^ y <= x → x = y
+Transitiva (O3) x <= y ^ y <= z → x <= z  (O4) ∀ x ^ y ∈ Q ∃ x <= y ∨ y <= x
+Compatibilidade da ordem com a adição (OA) x <= y → x+z <= y+Z. O sentido da desigualdade se mantém!
+Compatibilidade da ordem com amultiplicação (OM) x <= y ^ 0 <= z → xz <= yz. O sentido da desigualdade se mantém!
